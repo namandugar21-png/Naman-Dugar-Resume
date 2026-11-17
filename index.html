@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Personal resume and portfolio website of Naman Dugar.">
+  <title>Naman Dugar | Resume & Portfolio</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header class="site-header">
+  <nav class="nav container" aria-label="Main navigation">
+    <a class="brand" href="#home">ND<span>.</span></a>
+    <button class="menu-toggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+    <ul class="nav-links">
+      <li><a href="#about">About</a></li><li><a href="#education">Education</a></li>
+      <li><a href="#skills">Skills</a></li><li><a href="#projects">Projects</a></li>
+      <li><a class="nav-cta" href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+<main>
+<section class="hero section" id="home"><div class="container hero-grid">
+  <div><p class="eyebrow"><i></i> STUDENT • ASPIRING BUSINESS PROFESSIONAL</p>
+    <h1>Hello, I'm<br><span>Naman Dugar.</span></h1>
+    <p class="intro">A curious learner interested in business, entrepreneurship, technology, and turning ideas into meaningful projects.</p>
+    <div class="actions"><a class="button" href="#projects">Explore my work ↗</a><a class="underlink" href="#contact">Get in touch</a></div>
+    <div class="stats"><div><b>01</b><small>Curiosity</small></div><div><b>02</b><small>Learning</small></div><div><b>03</b><small>Building</small></div></div>
+  </div>
+  <div class="hero-art"><div class="ring"></div><div class="monogram">N<span>D</span></div><small>PERSONAL PORTFOLIO • 2026</small></div>
+</div><div class="container scroll">SCROLL TO EXPLORE ↓</div></section>
+<section class="section white" id="about"><div class="container split"><div><p class="kicker">01 / ABOUT ME</p><h2>Driven by curiosity.<br><em>Focused on growth.</em></h2></div><div class="copy"><p>I enjoy learning how businesses work, exploring new technologies, and finding practical ways to solve problems. I believe consistent learning, thoughtful execution, and collaboration are key to personal and professional growth.</p><p class="muted">This website is my digital introduction, bringing together my education, skills, projects, and ways to connect.</p><a class="underlink" href="#contact">Let's connect ↗</a></div></div></section>
+<section class="section pale" id="education"><div class="container"><p class="kicker">02 / EDUCATION</p><div class="heading"><h2>My learning <em>journey.</em></h2><p>Academic details and milestones.</p></div>
+  <div class="timeline">
+    <article><small>2026 — PRESENT</small><div><h3>Indian Institute of Management Bangalore</h3><b>BBA in Digital Business & Entrepreneurship (DBE)</b><p class="muted">Add your current semester, relevant coursework, achievements, and expected completion year.</p></div></article>
+    <article><small>PREVIOUS</small><div><h3>Higher Secondary Education</h3><b>Class XII • [School / Board]</b><p class="muted">Add school name, passing year, stream, and score or achievements.</p></div></article>
+    <article><small>PREVIOUS</small><div><h3>Secondary Education</h3><b>Class X • [School / Board]</b><p class="muted">Add school name, passing year, and score or achievements.</p></div></article>
+  </div></div></section>
+<section class="section white" id="skills"><div class="container"><p class="kicker">03 / SKILLS</p><div class="heading"><h2>Tools I use. <em>Ideas I explore.</em></h2><p>Update this list to reflect your actual strengths.</p></div>
+  <div class="cards"><article><small>01</small><h3>Business & Strategy</h3><p>Business fundamentals, market research, idea evaluation</p></article><article><small>02</small><h3>Digital & Technology</h3><p>HTML, CSS, website fundamentals, digital tools</p></article><article><small>03</small><h3>Communication</h3><p>Presentation, teamwork, written communication</p></article><article><small>04</small><h3>Creative Thinking</h3><p>Problem-solving, design thinking, continuous learning</p></article></div></div></section>
+<section class="section pale" id="projects"><div class="container"><p class="kicker">04 / SELECTED WORK</p><div class="heading"><h2>Things I'm <em>building.</em></h2><p>Replace sample cards with your completed work.</p></div>
+  <div class="projects"><article class="featured"><small>PROJECT 01 • WEB DEVELOPMENT</small><div><h3>Personal Resume Website</h3><p>A responsive personal website built with semantic HTML and custom CSS, featuring clear navigation, structured sections, and a consistent visual identity.</p><span>HTML</span><span>CSS</span></div></article><article><small>PROJECT 02 • ADD CATEGORY</small><div><h3>[Your project name]</h3><p>Describe the problem, your approach, and the result in a few sentences.</p><span>[Tool / skill]</span></div></article></div></div></section>
+<section class="section dark" id="contact"><div class="container split"><div><p class="kicker">05 / CONTACT</p><h2>Have an idea?<br><em>Let's talk.</em></h2><p class="contact-intro">I'm open to learning opportunities, collaborations, and meaningful conversations.</p></div><div class="contact-links"><a href="mailto:your.email@example.com"><small>EMAIL</small>your.email@example.com ↗</a><a href="https://www.linkedin.com/" target="_blank" rel="noreferrer"><small>LINKEDIN</small>Add your LinkedIn profile ↗</a><a href="https://github.com/" target="_blank" rel="noreferrer"><small>GITHUB</small>Add your GitHub profile ↗</a><p>Replace sample contact details before publishing.</p></div></div></section>
+</main>
+<footer><div class="container foot"><a class="brand" href="#home">ND<span>.</span></a><p>Designed & built with HTML and CSS.</p><p>© <span id="year">2026</span> Naman Dugar</p></div></footer>
+<script>
+const toggle=document.querySelector('.menu-toggle'), nav=document.querySelector('.nav-links');
+toggle.addEventListener('click',()=>{const opened=nav.classList.toggle('open');toggle.setAttribute('aria-expanded',String(opened));});
+nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('open');toggle.setAttribute('aria-expanded','false');}));
+document.getElementById('year').textContent=new Date().getFullYear();
+</script>
+</body></html>
